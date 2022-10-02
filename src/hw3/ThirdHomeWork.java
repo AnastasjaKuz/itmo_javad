@@ -2,13 +2,12 @@ package hw3;
 
 import java.util.Scanner;
 
-public class Task1 {
+public class ThirdHomeWork {
     public static void main(String[] args) {
         // Задача на WHILE
 
         Scanner tarelka = new Scanner(System.in);
         Scanner sredstvo = new Scanner(System.in);
-
 
         System.out.println("Введите количество тарелок");
         System.out.println("Введите количество моющего стредства");
@@ -16,7 +15,7 @@ public class Task1 {
         int tarelka1 = tarelka.nextInt();
         double sredstvo1 = sredstvo.nextDouble();
 
-        while (tarelka1 > 0 && sredstvo1 > 0) {
+        while (tarelka1 > 0 && sredstvo1 > 0.5) {
             tarelka1--;
             sredstvo1 -= 0.5;
             System.out.println(tarelka1);
@@ -28,7 +27,7 @@ public class Task1 {
 
         int unknownumber, usernumber, truecount = 0;
         System.out.println("Угадай число");
-        unknownumber = (int) Math.floor(Math.random() * 9);
+        unknownumber = (int)(Math.random() * 9);
         do {
             truecount++;
             Scanner input = new Scanner(System.in);
@@ -42,8 +41,6 @@ public class Task1 {
             }
         } while (unknownumber != usernumber);
         System.out.println("количество попыток" + truecount);
-
-
 
     }
 }

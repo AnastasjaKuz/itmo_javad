@@ -1,6 +1,6 @@
 package hw2;
 
-public class Task1 {
+public class SecondHomeWork {
     public static void main(String[] args) {
         // Задача на if
         int mounth = 5;
@@ -14,27 +14,35 @@ public class Task1 {
             System.out.println("Осень");
         } else if (mounth == 12){
             System.out.println("Зима");
+        } else{
+            System.out.println("Ошибка ввода");
         }
         // Задача на switch
         //1
-        int sum = 100_000;
+        double sum = 100_000;
         int saleCode = 4525;
         switch (saleCode) {
             case 4525:
-                System.out.println(sum * 0.3);
+                sum = sum * 0.3;
+                //System.out.println("К оплате" + sum);
                 break;
             case 6424:
             case 7012:
-                System.out.println(sum * 0.2);
+                sum = sum * 0.2;
+                //System.out.println("К оплате" + sum);
                 break;
             case 7647:
             case 9011:
             case 6612:
-                System.out.println(sum * 0.1);
+                sum = sum * 0.1;
+                //System.out.println("К оплате" + sum);
                 break;
             default:
-                System.out.println(sum);
+                //System.out.println("К оплате" + sum);
         }
+        System.out.println("К оплате" + sum);
+
+
         // Задача на if
         int count = 84;
         if (count >=0 && count <= 39){
@@ -46,6 +54,8 @@ public class Task1 {
         } else if (count >=90 && count <= 100){
             System.out.println("Отлично");
         }
+
+
         // Задача на Math.random() и if
         int chislo = 110;
         if (chislo > 25 && chislo < 200){
